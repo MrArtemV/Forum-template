@@ -180,6 +180,27 @@ body {
     padding-top: 5px;
 }
 
+.folder_main {
+    background: white;
+}
+
+.folder_point {
+    margin: 0 auto;
+}
+
+.point_desc{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: baseline;
+}
+
+.fa-comments {
+    font-size: 70px;
+    margin-left: 20px;
+    color: #262a27;
+    display: inline-block;
+}
+
 /*
 * раздел achors
 */
