@@ -171,7 +171,8 @@ body {
 .folder_title {
     color: #dcdcdc;
     margin-left: 20px;
-    padding-top: 5px;
+    padding: 10px 0px;
+    vertical-align: middle;
 }
 
 .folder_main {
@@ -179,17 +180,27 @@ body {
 }
 
 .folder_point {
-    margin: 0 auto;
+    margin: 0 10px;
+    border-top: 1px solid #262a27;
+    padding-top: 1rem;
 }
 
-.folder_point:nth-child(1) {
-    padding-top: 10px;
+.folder_point:nth-child(1){
+    border-top: none;
 }
 
 .point_desc{
     display: inline-block;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+.point_desc p {
+    color: #778899;
+}
+
+.point_desc span {
+    color: #2b2e2b;
 }
 
 .fa-comments {
@@ -210,6 +221,9 @@ body {
         font-size: 12px;
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /*
