@@ -160,28 +160,34 @@ body {
 .folder {
     border: 1px solid #dadada;
     background-color: #DAEEFF;
+    margin-bottom: 20px;
+    border-radius: 10%;
 }
 
 .folder_header {
     width: 100%;
-    height: 50px;
+    /*height: 50px;*/
     background-color: #262a27;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .folder_title {
     color: #dcdcdc;
     margin-left: 20px;
-    padding: 10px 0px;
+    padding: 5px 0px;
     vertical-align: middle;
 }
 
 .folder_main {
     background: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .folder_point {
     margin: 0 10px;
-    border-top: 1px solid #262a27;
+    border-top: 1px solid #939e96;
     padding-top: 1rem;
 }
 
@@ -223,6 +229,10 @@ body {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .folder_title {
+        padding: 10px 0px;
     }
 }
 
@@ -297,6 +307,9 @@ hr {
     margin-right: auto;
 }
 
+h2 {
+    margin-bottom: .2rem;
+}
 /*
 * END FILE
 */
