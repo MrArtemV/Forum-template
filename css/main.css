@@ -16,7 +16,6 @@
     2. main
     3. footer
     4. achors
-    5. buttons
     6. other
 * для перехода к определённому разделу нажмите [ctrl]+[f]
 * введите название раздела и нажмите enter
@@ -258,8 +257,10 @@ h2 {
     font-size: 20px;
 }
 
-.fa-folder-plus {
+.fa-user-circle {
     font-size: 37px;
+    color: #262a27;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 992px){
@@ -294,22 +295,24 @@ footer {
     padding-bottom: 20px;
 }
 
-footer a {
-    color: #1dde40;
-}
-
-footer a:hover {
-    color: #8a867b;
-}
-
 footer hr {
-    max-width: 80%;
+    max-width: 45%;
+    background-color: #dcdcdc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.col-md-3{
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 992px) {
-    section.col-md-4 {
+    section.col-md-3 {
         padding-top: 35px;
         padding-bottom: 35px;
+    }
+    footer hr {
+        max-width: 60%;
     }
 }
 
@@ -326,6 +329,14 @@ a {
 a:hover {
     color: #1dde40;
     text-decoration: none;
+}
+
+main a {
+    color: #212529;
+}
+
+aside a {
+    color: #212529;
 }
 
 .profile_menu {
@@ -364,6 +375,14 @@ a:hover {
     display: block;
 }
 
+footer a {
+    color: #1dde40;
+}
+
+footer a:hover {
+    color: #8a867b;
+}
+
 @media screen and (min-width: 992px){
     .mob_only {
         display: none;
@@ -377,11 +396,20 @@ a:hover {
     background-color: #262a27 !important;
 }
 
-hr {
-    background-color: #dcdcdc;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+.avatar {
+    border-radius: 20%;
+    width: 37px;
+    height: 37px;
+    margin-left: 20px;
+}
+
+.fa-vk {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.fa-telegram-plane {
+    font-size: 30px;
 }
 
 /*
