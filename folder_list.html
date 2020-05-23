@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PHP | forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+        <!--/BOOTSTRAP-->
+
+        <!-- FontAwesome -->
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+        <!--script defer src="fontawesome/js/all.js"></script-->
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <!-- /FontAwesome -->
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div id="page">
+            <header id="navigation" class="bg-dark" role="navigation">
+                <nav id="navigation" class="nav nav navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <div id="logo" class="navbar-brand justify-content-start">
+                            <a href="index.html">
+                                <span>#логотип</span>
+                            </a>
+                        </div>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation-content" aria-controls="navigation-content" aria-expanted="false" aria-label="переключатель навигации" style="margin-top:-3px; margin-right: 1rem;">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navigation-content" class="collapse navbar-collapse justify-content-end bg-dark dropdown">
+                            <a href="index.html" class="nav-link">главная</a>
+                            <a href="#" class="nav-link">IT новости</a>
+                            <a href="#" class="nav-link">F.A.Q</a>
+                            <a href="#" class="nav-link">Правила</a>
+                            <a href="#" class="nav-link">О нас</a>
+                            <a href="#" class="nav-link mob_only">Профиль</a>
+                            <a href="#" class="nav-link mob_only">Выйти</a>
+                        </div>
+                        <div class="nav-link user_menu">
+                            <a href="#"><i class="profile_menu fas fa-user-circle"></i></a>
+                            <div class="arrow_down">
+                                <i class="fas fa-chevron-up" id="user_menu">
+                                    <div class="entity"></div>
+                                    <div class="submenu">
+                                        <a href="#" class="block">Моя страница</a><hr>
+                                        <a href="#" class="block">Настройки</a><hr>
+                                        <a href="#" class="block">Техподдержка</a><hr>
+                                        <a href="#" class="block">Выйти</a>
+                                    </div>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container main_content_area">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <main class="site_pool_left" role="main">
+                            <section class="folder">
+                                <div class="folder_header">
+                                    <h2 class="folder_title">Разделы</h2>
+                                </div>
+                                <div class="folder_main">
+                                    <div class="folder_point">
+                                        <i class="far fa-comments"></i>
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Первый раздел</h2></a>
+                                            <p>Тредов:<span>228</span>; Ответов:<span>228</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="folder_point">
+                                        <i class="far fa-comments"></i>
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Второй раздел</h2></a>
+                                            <p>Тредов:<span>228</span>; Ответов:<span>228</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="folder_point">
+                                        <i class="far fa-comments"></i>
+                                        <div class="point_desc">
+                                            <a href="#"><h2>третий раздел</h2></a>
+                                            <p>Тредов:<span>228</span>; Ответов:<span>228</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="folder_point">
+                                        <i class="far fa-comments"></i>
+                                        <div class="point_desc">
+                                            <a href="#"><h2>четвёртый раздел</h2></a>
+                                            <p>Тредов:<span>228</span>; Ответов:<span>228</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                    <div class="col-lg-4">
+                        <aside class="folder">
+                            <div class="folder_header">
+                                <h2 class="folder_title">Новые треды</h2>
+                            </div>
+                            <div class="folder_main">
+                                <div class="folder_point">
+                                    <img src="photo_2020-01-13_20-50-44.jpg" alt="аватарка" class="avatar">
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Продам гараж</h2></a>
+                                            <p>Ответов:<span>228</span></p>
+                                        </div>
+                                </div>
+                                <div class="folder_point">
+                                    <img src="photo_2020-01-13_20-50-44.jpg" alt="аватарка" class="avatar">
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Продам гараж</h2></a>
+                                            <p>Ответов:<span>228</span></p>
+                                        </div>
+                                </div>
+                                <div class="folder_point">
+                                    <img src="photo_2020-01-13_20-50-44.jpg" alt="аватарка" class="avatar">
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Продам гараж</h2></a>
+                                            <p>Ответов:<span>228</span></p>
+                                        </div>
+                                </div>
+                                <div class="folder_point">
+                                    <img src="photo_2020-01-13_20-50-44.jpg" alt="аватарка" class="avatar">
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Продам гараж</h2></a>
+                                            <p>Ответов:<span>228</span></p>
+                                        </div>
+                                </div>
+                                <div class="folder_point">
+                                    <img src="photo_2020-01-13_20-50-44.jpg" alt="аватарка" class="avatar">
+                                        <div class="point_desc">
+                                            <a href="#"><h2>Продам гараж</h2></a>
+                                            <p>Ответов:<span>228</span></p>
+                                        </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="folder">
+                            <div class="folder_header">
+                                <h2 class="folder_title">Пользователи онлайн</h2>
+                            </div>
+                            <div class="folder_main">
+                                <p class="users_list">Юзер1, Юзер2, Юзер3, Юзер4, Юзер5, Юзер6, Юзер7, Юзер8, Юзер9, Юзер10, Юзер11, Юзер12, Юзер13</p>
+                            </div>
+                        </aside>
+                        <aside class="folder">
+                            <div class="folder_header">
+                                <h2 class="folder_title">статистика форума</h2>
+                            </div>
+                            <div class="folder_main">
+                                <dl>
+                                    <dt>Треды:</dt>
+                                    <dd>1488</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Сообщения:</dt>
+                                    <dd>177013</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Пользователи:</dt>
+                                    <dd>228</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Новый участник:</dt>
+                                    <dd>Kira_Yoshikage</dd>
+                                </dl>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <footer class="container-fluid">
+                <div class="row">
+                    <section class="col-md-3">
+                        <h4>Контакты</h4>
+                        <hr>
+                        <i class="fab fa-vk"></i>
+                        <i class="fab fa-telegram-plane"></i>
+                        <p>Техподдержка: support@forum.com</p>
+                    </section>
+                    <section class="col-md-3">
+                        <h4>Авторы</h4>
+                        <hr>
+                        <p>MrArtemV</p>
+                        <a href="#">какая-то ссылка</a>
+                    </section>
+                    <section class="col-md-3">
+                        <h4>Важные ссылки</h4>
+                        <hr>
+                        <a href="#">Контакт</a><br>
+                        <a href="#">Политика коденфициальности</a><br>
+                    </section>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

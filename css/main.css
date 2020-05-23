@@ -186,7 +186,8 @@ h2 {
 
 .folder_title {
     color: #dcdcdc;
-    margin-left: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
     padding: 10px 0px;
     font-size: 1.35rem
 }
