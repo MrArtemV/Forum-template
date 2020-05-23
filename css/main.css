@@ -155,7 +155,8 @@ dd {
 }
 
 h2 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
 .main_content_area {
@@ -188,6 +189,7 @@ h2 {
     color: #dcdcdc;
     margin-left: 40px;
     padding: 10px 0px;
+    font-size: 1.35rem
 }
 
 .folder_main {
@@ -231,10 +233,15 @@ h2 {
 
 .point_desc p {
     color: #778899;
+    font-size: 0.9rem;
 }
 
 .point_desc span {
     color: #2b2e2b;
+}
+
+.point_desc h2 {
+    margin-bottom: 5px;
 }
 
 .fa-comments {
@@ -266,16 +273,43 @@ h2 {
         font-size: 12px;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
     .folder_title {
         padding: 10px 0px;
     }
 
     aside.folder:nth-child(1) {
         margin-top: 50px;
+    }
+}
+
+/*
+* раздел footer
+*/
+
+footer {
+    background: #262a27;
+    color: #dcdcdc;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: #1dde40;
+}
+
+footer a:hover {
+    color: #8a867b;
+}
+
+footer hr {
+    max-width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    section.col-md-4 {
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 }
 
