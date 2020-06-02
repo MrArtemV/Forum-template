@@ -1,3 +1,9 @@
 .folder_main {
 	border-radius: 20px;
 }
+
+.avatar.big {
+	margin-left: 0;
+	width: 100%;
+	height: auto;
+}
