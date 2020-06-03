@@ -173,6 +173,11 @@ h2 {
     float: left;
 }
 
+.breadcrumb {
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
 .folder {
     margin-bottom: 20px;
     border-radius: 10%;
