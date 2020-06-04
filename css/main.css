@@ -296,7 +296,6 @@ h2 {
 footer {
     background: #262a27;
     color: #dcdcdc;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -304,8 +303,6 @@ footer {
 footer hr {
     max-width: 45%;
     background-color: #dcdcdc;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 section.col-md-3{
@@ -317,8 +314,15 @@ section.col-md-3{
         padding-top: 35px;
         padding-bottom: 35px;
     }
+
+    footer {
+        text-align: center;
+    }
+
     footer hr {
         max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
