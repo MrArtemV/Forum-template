@@ -31,6 +31,11 @@
 	padding-bottom: 10px;
 }
 
+.thread_desc > .last_reduct {
+	float: right;
+	font-size: 12px;
+}
+
 .desc_date {
 	float: left;
 }
@@ -48,6 +53,7 @@
 	color: #dedede;
 	background: #c23c25;
 	font-size: 13px;
+	font-weight: bold;
 	text-align: center;
 	border: 1px solid #778899;
 	border-radius: 20px;

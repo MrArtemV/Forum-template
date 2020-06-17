@@ -30,8 +30,14 @@
     height: 50px;
 }
 
-#navigation-content {
+header#navigation {
+    position: sticky;
+    top: 0;
     z-index: 9999;
+}
+
+#navigation > .container-fluid {
+    height: 100%;
 }
 
 .navbar {
@@ -68,6 +74,7 @@
 
 .nav-link {
     text-align: center;
+    padding: 0.3rem 1rem;
 }
 
 .nav-link.active {
@@ -77,58 +84,59 @@
 }
 
 .user_menu {
-    display: none;
+    background: #262a27;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-@media screen and (min-width: 992px) {
-    .user_menu {
-        display: inline-block;
-    }
+.user_menu.activate {
+    background: #2e332f;
+}
+
+.menu_subitem {
+    color: #b3e3c0;
 }
 
 .fa-user-circle {
-    font-size: 30px;
-    color: #DCDCDC;
+    font-size: 37px;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
 }
 
-.fa-user-circle:hover {
-    color: #1dde40;
-}
-
 .fa-chevron-up {
-    font-size: 10px;
-    margin-left: 3px;
-    color: #DCDCDC;
+    font-size: 14px;
+    margin-left: 7px;
     background: none;
     max-width: 10px;
     max-height: 10px;
+    vertical-align: super;
 }
 
-.fa-chevron-up:hover {
-    color: #1dde40;
+
+.submenu {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    visibility: hidden;
+    background: #252a27;
+    transition: opacity 100ms linear,top 100ms linear,visibility 100ms linear;
+    opacity: 0;
+    border-radius: 20px;
 }
 
-.arrow_down {
-    display: inline-block;
-    max-width: 10px;
-    max-height: 10px;
+.submenu.activate {
+    visibility: visible;    
+    color: #DCDCDC;
+    opacity: 1;
 }
 
-.arrow_down i:hover .submenu {
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    -moz-transform: scaleY(1);
-    transform: scaleY(1);
+@media screen and (max-width: 992px){
+    .user_menu {
+        display: none;
+    }
 }
-
-.fa-chevron-up .submenu a:hover {
-    color: #1dde40;
-}
-
 /*
 * раздел main
 */
@@ -176,6 +184,7 @@ h2 {
 .breadcrumb {
     border-radius: 20px;
     padding-left: 20px;
+    background: #d5e3d9;
 }
 
 .folder {
@@ -230,6 +239,10 @@ h2 {
     border-top: none;
 }
 
+.folder_point > .fa-user-circle {
+    margin-left: 20px;
+}
+
 .point_desc{
     display: inline-block;
     margin-left: 10px;
@@ -261,12 +274,6 @@ h2 {
     line-height: 2rem;
     padding: 10px;
     font-size: 20px;
-}
-
-.fa-user-circle {
-    font-size: 37px;
-    color: #262a27;
-    margin-left: 20px;
 }
 
 @media screen and (max-width: 992px){
@@ -349,32 +356,9 @@ aside a {
     color: #212529;
 }
 
-.profile_menu {
-    color: #dcdcdc;
-}
-
-.entity {
-    min-height: 20px;
-}
-
-.submenu {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    -moz-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: #252a27;
-    padding: 10px 0;
-}
-
 .submenu a {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0.75rem 0;
 }
 
 .fa-chevron-up a {
